@@ -890,12 +890,8 @@
         </button>
     </div>
 
-    <!-- Hidden Native Audio Node with Multiple Resource Candidates Including Your Exact File -->
-    <audio id="makaMimiAudioNode" preload="auto">
-        <source src="Thando-makamimi.wav" type="audio/wav">
-        <source src="zulu_guidance.mp3" type="audio/mpeg">
-        <source src="zulu_guidance.wav" type="audio/wav">
-        <source src="zulu_guidance.m4a" type="audio/mp4">
+    <!-- Native audio node used by the advisor playback controls -->
+    <audio id="bg-audio" src="Thando-makamimi.wav" autoplay preload="auto">
     </audio>
 
     <!-- Order Modal for Instant WhatsApp Checkout -->
@@ -961,7 +957,7 @@
             const yr = document.getElementById('currentYear');
             if (yr) yr.textContent = new Date().getFullYear();
 
-            const audioNode = document.getElementById('makaMimiAudioNode');
+            const audioNode = document.getElementById('bg-audio');
             if (audioNode) {
                 audioNode.load();
             }
@@ -999,7 +995,7 @@
         }
 
         function initAudioListeners() {
-            const audioNode = document.getElementById('makaMimiAudioNode');
+            const audioNode = document.getElementById('bg-audio');
             if (!audioNode) return;
 
             audioNode.onplay = () => {
@@ -1020,7 +1016,7 @@
         }
 
         async function startInstantAutoplay() {
-            const audioNode = document.getElementById('makaMimiAudioNode');
+            const audioNode = document.getElementById('bg-audio');
             if (!audioNode) return;
 
             try {
@@ -1065,7 +1061,7 @@
             }
 
             customAudioBlobUrl = URL.createObjectURL(file);
-            const audioNode = document.getElementById('makaMimiAudioNode');
+            const audioNode = document.getElementById('bg-audio');
             if (audioNode) {
                 audioNode.src = customAudioBlobUrl;
                 audioNode.load();
@@ -1087,7 +1083,7 @@
                 e.stopPropagation();
             }
 
-            const audioNode = document.getElementById('makaMimiAudioNode');
+            const audioNode = document.getElementById('bg-audio');
 
             if (isAudioPlaying) {
                 if (audioNode && !audioNode.paused) {
@@ -1184,7 +1180,7 @@
                 e.preventDefault();
                 e.stopPropagation();
             }
-            const audioNode = document.getElementById('makaMimiAudioNode');
+            const audioNode = document.getElementById('bg-audio');
             if (audioNode && !audioNode.paused) {
                 audioNode.pause();
             }
