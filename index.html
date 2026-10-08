@@ -1,0 +1,1370 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakaMimi Imbiza Yemvelo | Authentic African Wellness & Healing</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#FDF8E2',
+                            200: '#F9EFA8',
+                            300: '#F2DF68',
+                            400: '#E7C830',
+                            500: '#D4AF37',
+                            600: '#AA8820',
+                            700: '#7E6314',
+                            800: '#54410A',
+                            900: '#2A1F04'
+                        },
+                        royal: {
+                            800: '#1e295d',
+                            900: '#0f173a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        cinzel: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF4CE 0%, #E7C830 40%, #B88E1B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.12);
+        }
+        .gold-border-glow:hover {
+            border-color: rgba(212, 175, 55, 0.85);
+            box-shadow: 0 0 35px rgba(212, 175, 55, 0.28);
+        }
+        .glass-panel {
+            background: rgba(18, 16, 14, 0.94);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .luxury-radial {
+            background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.15) 0%, rgba(10, 9, 8, 1) 75%);
+        }
+        .product-card-hover {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .product-card-hover:hover {
+            transform: translateY(-4px);
+            border-color: rgba(212, 175, 55, 0.7);
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.7), 0 0 25px rgba(212, 175, 55, 0.2);
+        }
+        /* Full framing to guarantee zero cutoff of embedded typography, banners, and bottle labels */
+        .showcase-frame {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at center, #1b1714 0%, #0c0a09 100%);
+            border-radius: 1.25rem;
+            overflow: hidden;
+            width: 100%;
+            padding: 0.75rem;
+        }
+        .showcase-img {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: contain;
+            object-position: center;
+            transition: transform 0.4s ease;
+        }
+        .product-card-hover:hover .showcase-img {
+            transform: scale(1.02);
+        }
+        /* Voice Waveform Animation */
+        @keyframes soundWave {
+            0%, 100% { height: 4px; }
+            50% { height: 22px; }
+        }
+        .animate-wave-1 { animation: soundWave 1.1s ease-in-out infinite; }
+        .animate-wave-2 { animation: soundWave 0.9s ease-in-out infinite 0.2s; }
+        .animate-wave-3 { animation: soundWave 1.3s ease-in-out infinite 0.4s; }
+        .animate-wave-4 { animation: soundWave 0.8s ease-in-out infinite 0.1s; }
+        .animate-wave-5 { animation: soundWave 1.2s ease-in-out infinite 0.3s; }
+    </style>
+</head>
+<body class="bg-[#0A0908] text-stone-200 font-sans antialiased selection:bg-gold-500 selection:text-stone-950 min-h-screen">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-stone-950 via-gold-950/80 to-stone-950 border-b border-gold-500/25 py-2.5 px-4 text-center text-xs tracking-wider text-gold-300 font-medium">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1">
+            <span class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>100% IMVELO YEMDABU • NO HARSH CHEMICALS</span>
+            </span>
+            <span class="hidden md:inline text-gold-500/50">•</span>
+            <span>DISCREET COURIER NATIONWIDE: PEP PAXI / POSTNET / THE COURIER GUY</span>
+            <span class="hidden md:inline text-gold-500/50">•</span>
+            <span class="text-white font-semibold">Direct WhatsApp: <a href="https://wa.me/27769804819" class="underline hover:text-gold-400">076 980 4819</a></span>
+        </div>
+    </div>
+
+    <!-- Premium Navigation -->
+    <header class="border-b border-stone-800/80 bg-stone-950/95 backdrop-blur sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
+            <!-- Brand & Royal Portrait Emblem -->
+            <a href="#" class="flex items-center gap-3.5 group">
+                <div class="w-11 h-11 rounded-full border-2 border-gold-500/80 overflow-hidden flex items-center justify-center bg-gradient-to-br from-royal-900 to-stone-950 shadow-lg group-hover:scale-105 transition-transform">
+                    <img src="829301442_28797453903278897_6480968709035888153_n (1).webp" 
+                         alt="Ndlovukazi Maka Mimi" 
+                         class="w-full h-full object-cover"
+                         onerror="this.onerror=null; this.src='829301442_28797453903278897_6480968709035888153_n.webp';">
+                </div>
+                <div>
+                    <div class="text-xl sm:text-2xl font-cinzel font-black tracking-widest text-white group-hover:text-gold-400 transition-colors flex items-center gap-2">
+                        <span>MAKAMIMI</span>
+                        <span class="text-[9px] bg-gold-500/20 text-gold-300 px-2 py-0.5 rounded font-sans tracking-wide uppercase border border-gold-500/30">Imbiza Yemvelo</span>
+                    </div>
+                    <span class="text-[10px] uppercase font-bold text-stone-400 tracking-wider block">
+                        Ndlovukazi Nkosazan' Emhlophe • African Traditional Wellness
+                    </span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-6 text-xs font-semibold tracking-wider uppercase text-stone-300">
+                <a href="#about-maka" class="hover:text-gold-400 transition-colors">Ndlovukazi</a>
+                <a href="#womens-health" class="text-purple-300 hover:text-purple-200 transition-colors flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                    <span>Women's Care</span>
+                </a>
+                <a href="#spiritual-shield" class="text-gold-400 hover:text-gold-300 transition-colors flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                    <span>2. Shielding Range</span>
+                </a>
+                <a href="#catalog" class="hover:text-gold-400 transition-colors">3. Dispensary</a>
+                <a href="#consultation" class="hover:text-gold-400 transition-colors">Assessment</a>
+            </nav>
+
+            <!-- WhatsApp Order CTA Header -->
+            <div class="flex items-center gap-2">
+                <a href="https://wa.me/27769804819?text=Sawubona%20MakaMimi,%20ngicela%20ukwazi%20kabanzi%20ngemikhiqizo%20yemvelo." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 hover:to-amber-500 text-stone-950 font-bold px-4 py-2.5 rounded-xl shadow-lg shadow-gold-500/10 hover:shadow-gold-500/25 transition-all text-xs uppercase tracking-wider">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+                    </svg>
+                    <span>Order via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Luxury Hero Section featuring the Full Spiritual Range Banner -->
+    <section id="hero" class="relative luxury-radial py-12 md:py-20 border-b border-stone-800/80 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-10 items-center">
+
+            <div class="md:col-span-5 space-y-5">
+                <div class="inline-flex items-center gap-2 bg-stone-900/90 border border-gold-500/40 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-gold-400">
+                    <span class="w-2 h-2 rounded-full bg-gold-400 animate-ping"></span>
+                    100% Imvelo • No Artificial Chemicals
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-cinzel font-black text-white leading-[1.15]">
+                    Elevating African <br>
+                    <span class="gold-gradient-text">Traditional Wellness</span>
+                </h1>
+
+                <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+                    Where ancestral wisdom meets modern luxury packaging. Formulated by <strong>Maka Mimi (Ndlovukazi Nkosazan' Emhlophe)</strong>, our authentic indigenous formulations naturally support hormonal balance, male vigor, marital harmony, and impenetrable spiritual shielding.
+                </p>
+
+                <!-- Audio Guidance Quick Bar -->
+                <div class="p-3.5 rounded-2xl bg-gradient-to-r from-emerald-950/70 via-stone-900 to-stone-900 border border-emerald-500/40 flex items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-400/50 flex items-center justify-center text-emerald-400 text-base">
+                            📢
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-white block">Musa Ukuhlupheka Uthule</span>
+                            <span class="text-[10px] text-stone-400">Lalela izwi likaMaka Mimi ngesiZulu</span>
+                        </div>
+                    </div>
+                    <button onclick="toggleAudioGuide(event)" class="bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold px-3 py-1.5 rounded-xl whitespace-nowrap transition flex items-center gap-1.5 shadow-md">
+                        <span id="bannerPlayIcon">▶</span>
+                        <span id="bannerPlayText">Lalela Izwi</span>
+                    </button>
+                </div>
+
+                <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                    <a href="https://wa.me/27769804819?text=Sawubona%20MakaMimi,%20ngifisa%20uku-oda%20imikhiqizo%20yenu." 
+                       target="_blank" 
+                       class="bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 hover:to-amber-500 text-stone-950 font-bold px-7 py-3.5 rounded-xl text-center shadow-lg transition-all text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                        <span>Discreet WhatsApp Ordering</span>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    </a>
+                    <a href="#catalog" class="border border-gold-500/50 text-gold-300 hover:bg-gold-500/10 font-bold px-7 py-3.5 rounded-xl text-center transition-all text-xs uppercase tracking-wider flex items-center justify-center">
+                        View Full Collection
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-3 gap-3 border-t border-stone-800/80 pt-4 text-center sm:text-left">
+                    <div>
+                        <div class="text-2xl font-black text-white font-cinzel">100%</div>
+                        <div class="text-[11px] text-stone-400 uppercase tracking-wider">Natural Herbs</div>
+                    </div>
+                    <div class="border-x border-stone-800 px-3">
+                        <div class="text-2xl font-black text-gold-400 font-cinzel">Fast</div>
+                        <div class="text-[11px] text-stone-400 uppercase tracking-wider">PAXI / Courier Guy</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-black text-emerald-400 font-cinzel">Discreet</div>
+                        <div class="text-[11px] text-stone-400 uppercase tracking-wider">Unmarked Parcel</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner Showcase Image Box: Studio Full Spiritual Range -->
+            <div class="md:col-span-7">
+                <div class="bg-stone-950 border border-gold-500/30 rounded-3xl overflow-hidden shadow-2xl relative group gold-border-glow">
+                    <div class="showcase-frame min-h-[380px] sm:min-h-[460px]">
+                        <img src="Gemini_Generated_Image_bncqm0bncqm0bncq.webp" 
+                             alt="The Full Spiritual Range by MakaMimi - Studio Presentation" 
+                             class="showcase-img"
+                             onerror="this.onerror=null; this.src='Gemini_Generated_Image_bncqm0bncqm0bncq.jfif';">
+                    </div>
+                    <div class="p-5 bg-gradient-to-t from-stone-950 via-stone-950 to-stone-900/90 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] text-gold-400 uppercase tracking-widest font-bold">Featured Showcase</span>
+                            <h4 class="text-white font-cinzel font-bold text-sm">The Full Spiritual Range by MakaMimi</h4>
+                            <p class="text-[11px] text-stone-400">Vula Kuvaliwe • Vula Mnyango • Somlambo Tonic • Xosha Isilwane</p>
+                        </div>
+                        <button onclick="openOrderModal('The Full Spiritual Range (4-Piece Set)', 'R1,100')" 
+                                class="bg-stone-800 hover:bg-gold-500 hover:text-stone-950 text-gold-400 font-bold px-4 py-2 rounded-xl text-xs uppercase tracking-wider transition whitespace-nowrap border border-gold-500/30">
+                            Order Full Range (R1,100)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: ABOUT NDLOVUKAZI MAKA MIMI -->
+    <section id="about-maka" class="py-16 bg-stone-950 border-b border-stone-800/80 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-panel gold-border-glow rounded-3xl p-6 md:p-10 grid md:grid-cols-12 gap-8 items-center">
+
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden p-1 bg-gradient-to-tr from-gold-500 via-royal-800 to-amber-500 shadow-2xl group">
+                        <img src="829301442_28797453903278897_6480968709035888153_n (1).webp" 
+                             alt="Ndlovukazi Maka Mimi - Royal African Beadwork" 
+                             class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='829301442_28797453903278897_6480968709035888153_n.webp';">
+                        <span class="absolute bottom-3 right-3 bg-emerald-500 border-2 border-stone-950 w-4 h-4 rounded-full" title="Active on WhatsApp"></span>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 space-y-4">
+                    <div class="inline-block bg-gold-950/80 border border-gold-500/40 text-gold-300 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Ndlovukazi Nkosazan' Emhlophe
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-cinzel font-black text-white">Maka Mimi</h2>
+                    <p class="text-sm font-serif italic text-gold-300">
+                        "Uyi Ndlovukazi ngempela Maka Mimi, Nkosazan' Emhlophe uphuma Langa sikithi! Gege la gege Nkosazane!"
+                    </p>
+                    <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
+                        Dedicated traditional healer and wellness practitioner bringing ancestral, plant-based remedies into modern everyday life. Every formulation is prepared from harvested Southern African botanicals—free of harsh synthetic additives, preservatives, or artificial dyes.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2 text-xs">
+                        <div class="bg-stone-900 border border-stone-800 rounded-xl px-3.5 py-2">
+                            <span class="text-stone-400 block text-[10px] uppercase">TikTok Official</span>
+                            <a href="https://www.tiktok.com/@makamimi72" target="_blank" class="text-white hover:text-gold-400 font-bold">@makamimi72</a>
+                        </div>
+                        <div class="bg-stone-900 border border-stone-800 rounded-xl px-3.5 py-2">
+                            <span class="text-stone-400 block text-[10px] uppercase">Direct Practice WhatsApp</span>
+                            <a href="https://wa.me/27769804819" class="text-gold-400 font-bold hover:underline">+27 76 980 4819</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: WOMEN'S HEALTH PILLAR -->
+    <section id="womens-health" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+        <div class="border-l-4 border-gold-500 pl-4 mb-8">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Flagship Women's Care</span>
+            <h2 class="text-2xl md:text-3xl font-cinzel font-bold text-white uppercase tracking-wide">Premier Women's Wellness</h2>
+            <p class="text-stone-400 text-sm mt-1">Holistic body maintenance designed specifically to support female reproductive systems, flush toxins, and restore hormonal equilibrium.</p>
+        </div>
+
+        <div class="bg-stone-950 border border-stone-800 hover:border-purple-500/50 rounded-3xl p-6 md:p-10 grid md:grid-cols-12 gap-8 items-center shadow-2xl transition">
+
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-sm rounded-2xl overflow-hidden bg-gradient-to-b from-stone-900 to-stone-950 p-2 border border-stone-800 shadow-xl group showcase-frame">
+                    <img src="753356754_27806724492351848_1885657386085242299_n (1).webp" 
+                         alt="Isibusiso Sabafazi 1 Litre Bottle" 
+                         class="showcase-img"
+                         onerror="this.onerror=null; this.src='753356754_27806724492351848_1885657386085242299_n.webp';">
+                    <span class="absolute top-4 right-4 bg-purple-900/80 text-purple-200 text-[10px] font-bold px-2.5 py-1 rounded-full border border-purple-500/50 uppercase">
+                        1 Litre Family Size
+                    </span>
+                </div>
+            </div>
+
+            <div class="md:col-span-7 space-y-4">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-xs font-semibold px-2.5 py-1 bg-purple-900/50 text-purple-300 rounded-lg border border-purple-800">
+                        1-Litre Family Value Size
+                    </span>
+                    <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-950/60 text-emerald-400 rounded-lg border border-emerald-800">
+                        100% Imvelo • Akunazi Zithelo Noma Chemicals
+                    </span>
+                </div>
+
+                <h3 class="text-2xl sm:text-3xl font-cinzel font-bold text-white">Isibusiso Sabafazi (The Woman's Blessing)</h3>
+                <p class="text-xs text-gold-400 font-semibold tracking-wide uppercase">Imbiza Yemvelo Yokuseka Impilo Yabesifazane</p>
+
+                <p class="text-stone-300 text-sm leading-relaxed">
+                    A pristine, chemical-free herbal formula engineered to restore internal harmony, ease menstrual disruptions, clear persistent discharge and odor, and provide lasting daily vitality. Pure organic nourishment for feminine wellness and intimacy renewal (<em>ushisa bheee</em>).
+                </p>
+
+                <!-- Matrix directly mapped to bottle label -->
+                <div class="grid sm:grid-cols-2 gap-3 text-xs text-stone-300 bg-stone-900/80 p-5 rounded-2xl border border-stone-800/80">
+                    <div class="flex items-center gap-2.5">
+                        <span class="text-emerald-400 font-bold">✔</span>
+                        <span>Balances Vital Hormones (Yamahomoni)</span>
+                    </div>
+                    <div class="flex items-center gap-2.5">
+                        <span class="text-emerald-400 font-bold">✔</span>
+                        <span>Deep Uterine Internal Detox</span>
+                    </div>
+                    <div class="flex items-center gap-2.5">
+                        <span class="text-emerald-400 font-bold">✔</span>
+                        <span>Minimizes Severe Cramping (Ubuhlungu)</span>
+                    </div>
+                    <div class="flex items-center gap-2.5">
+                        <span class="text-emerald-400 font-bold">✔</span>
+                        <span>Enhances Physical Energy & Vitality</span>
+                    </div>
+                    <div class="flex items-center gap-2.5">
+                        <span class="text-emerald-400 font-bold">✔</span>
+                        <span>Regulates Irregular Menstrual Flows</span>
+                    </div>
+                    <div class="flex items-center gap-2.5">
+                        <span class="text-emerald-400 font-bold">✔</span>
+                        <span>Sharpens Daily Mental Focus & Mood</span>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex flex-wrap items-center gap-4">
+                    <button onclick="openOrderModal('Isibusiso Sabafazi (1 Litre Tonic)', 'R380')" 
+                            class="bg-gradient-to-r from-purple-700 to-pink-600 hover:from-purple-600 hover:to-pink-500 text-white font-bold px-7 py-3.5 rounded-xl text-xs uppercase tracking-wider transition shadow-lg flex items-center gap-2">
+                        <span>Order 1L Bottle (R380)</span>
+                    </button>
+                    <button onclick="openOrderModal('Isibusiso Sabafazi Twin Pack (2 x 1L)', 'R690')" 
+                            class="border border-purple-500/50 hover:bg-purple-950/40 text-purple-200 font-semibold px-6 py-3.5 rounded-xl text-xs uppercase tracking-wider transition">
+                        Order 2L Twin Pack (R690)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: SPIRITUAL ALIGNMENT & SHIELDING PILLAR -->
+    <section id="spiritual-shield" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+        <div class="border-l-4 border-gold-500 pl-4 mb-8">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Ancestral Shielding & Good Fortune</span>
+            <h2 class="text-2xl md:text-3xl font-cinzel font-bold text-white uppercase tracking-wide">2. Spiritual Alignment & Shielding Range</h2>
+            <p class="text-stone-400 text-sm mt-1">Advanced protective formulas and road-openers presented with full visible branding and packaging.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Vula Mnyango Card with Kraft Pouch Artwork -->
+            <div class="product-card-hover bg-stone-950 border border-stone-800 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl relative overflow-hidden group">
+                <div>
+                    <div class="showcase-frame mb-5 min-h-[380px] sm:min-h-[440px] border border-stone-800/80">
+                        <img src="Gemini_Generated_Image_banuqcbanuqcbanu (1).webp" 
+                             alt="Vula Mnyango (Stop Suffering) Herbal Kraft Pouch" 
+                             class="showcase-img"
+                             onerror="this.onerror=null; this.src='Gemini_Generated_Image_bt0ylbbt0ylbbt0y.webp';">
+                        <span class="absolute top-4 left-4 bg-gold-950/90 text-gold-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-gold-500/40">
+                            Stop Suffering • Attraction
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-xl font-bold font-cinzel text-white">Vula Mnyango Herbal Blend</h3>
+                        <span class="text-xl font-bold text-gold-400 font-sans">R380</span>
+                    </div>
+                    <p class="text-xs text-stone-400 font-medium mt-0.5">Imbiza Yemvelo Yokusekela Impilo</p>
+
+                    <p class="text-stone-300 mt-3 text-xs leading-relaxed">
+                        Herbal formula engineered to stimulate draw power and stop unnecessary life friction. Renowned for drawing business clients, attracting clear financial pathways, welcoming good luck, and removing stagnant energy environments.
+                    </p>
+
+                    <div class="mt-4 space-y-1.5 text-xs text-stone-400 border-t border-stone-800 pt-3">
+                        <div class="flex items-center gap-2">
+                            <span class="text-gold-400">★</span>
+                            <span>Opens closed doors in business, tenders, and job pursuits</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-gold-400">★</span>
+                            <span>Sweetens personal aura and removes invisible obstacles</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-stone-800">
+                    <button onclick="openOrderModal('Vula Mnyango Herbal Blend (Stop Suffering)', 'R380')" 
+                            class="w-full bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 text-stone-950 font-bold py-3.5 rounded-xl text-xs uppercase tracking-wider transition shadow-md">
+                        Order Vula Mnyango via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Xosha Isilwane Card with Studio Protection Jar -->
+            <div class="product-card-hover bg-stone-950 border border-stone-800 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl relative overflow-hidden group">
+                <div>
+                    <div class="showcase-frame mb-5 min-h-[380px] sm:min-h-[440px] border border-stone-800/80">
+                        <img src="Gemini_Generated_Image_f6c6e9f6c6e9f6c6.webp" 
+                             alt="Xosha Isilwane Protection Jar - Studio Presentation" 
+                             class="showcase-img"
+                             onerror="this.onerror=null; this.src='Gemini_Generated_Image_f6c6e9f6c6e9f6c6.jpg';">
+                        <span class="absolute top-4 left-4 bg-red-950/90 text-red-300 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-red-500/40">
+                            Spiritual Shielding
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-xl font-bold font-cinzel text-white">Xosha Isilwane (Spiritual Shield)</h3>
+                        <span class="text-xl font-bold text-gold-400 font-sans">R380</span>
+                    </div>
+                    <p class="text-xs text-stone-400 font-medium mt-0.5">Imbiza Yemvelo Yokusekela Impilo</p>
+
+                    <p class="text-stone-300 mt-3 text-xs leading-relaxed">
+                        An unyielding traditional barrier compound created to banish heavy negative attachments, nocturnal attacks, sleep paralysis, and disruptive spiritual anomalies. Pure natural house-shield botanical compound.
+                    </p>
+
+                    <div class="mt-4 space-y-1.5 text-xs text-stone-400 border-t border-stone-800 pt-3">
+                        <div class="flex items-center gap-2">
+                            <span class="text-red-400">🛡️</span>
+                            <span>Eradicates evil tokens (<em>izilwane</em>) and spiritual disturbances</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-red-400">🛡️</span>
+                            <span>Restores undisturbed peaceful sleep and household serenity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-stone-800">
+                    <button onclick="openOrderModal('Xosha Isilwane (Spiritual Shield Jar)', 'R380')" 
+                            class="w-full bg-stone-800 hover:bg-red-900/60 hover:border-red-500 text-white font-bold py-3.5 rounded-xl text-xs uppercase tracking-wider transition border border-stone-700">
+                        Order Xosha Isilwane via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE COMPREHENSIVE BOTANICAL PHARMACY -->
+    <section id="catalog" class="py-16 bg-stone-900/30 border-t border-stone-800/80 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Curated Traditional Catalog</span>
+                    <h2 class="text-3xl sm:text-4xl font-cinzel font-black text-white mt-1">Complete MakaMimi Dispensary</h2>
+                    <p class="text-stone-400 text-sm mt-2 max-w-2xl">
+                        Explore our categorized formulations: Women's Care, Male Vitality (<em>Induku</em>), Sacred Unblocking, and Marital Binding Salts.
+                    </p>
+                </div>
+                <div class="mt-4 md:mt-0 text-xs text-stone-400">
+                    Nationwide Dispatch via <strong class="text-white">PEP PAXI & The Courier Guy</strong>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                <!-- FEATURED 1: COMBO YOMSEBENZI (3-POUCH STUDIO ARTWORK) -->
+                <div class="product-card-hover glass-panel rounded-3xl p-6 border border-emerald-500/50 flex flex-col justify-between group shadow-2xl relative overflow-hidden">
+                    <div class="absolute -top-3 left-6 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-extrabold text-[10px] tracking-widest uppercase px-3.5 py-1 rounded-full shadow-md z-10">
+                        ★ Verified Career Breakthrough (3-Pouch Set)
+                    </div>
+                    <div>
+                        <div class="showcase-frame mb-4 min-h-[300px] sm:min-h-[340px] border border-emerald-500/30">
+                            <img src="Gemini_Generated_Image_ouhdsuouhdsuouhd (1).jfif" 
+                                  alt="Combo Yomsebenzi (Job & Opportunity Combo) - 3 Resealable Pouches: Isigidimi, Xosha Isilwane, Vula Mnyango" 
+                                  class="showcase-img"
+                                 onerror="this.onerror=null; this.src='Gemini_Generated_Image_ouhdsuouhdsuouhd.jfif';">
+                            <span class="absolute bottom-3 right-3 bg-emerald-950/90 text-emerald-300 text-[10px] font-bold uppercase px-2 py-0.5 rounded border border-emerald-500/40">
+                                3-Pouch Sacred Set
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-xl font-bold font-cinzel text-white">Combo Yomsebenzi</h3>
+                            <span class="text-xl font-bold text-gold-400 font-sans">R550</span>
+                        </div>
+                        <p class="text-[11px] text-emerald-400 font-bold uppercase tracking-wide mt-1">
+                            Cleanse Darkness • Attract Good Fortune • Vula Inlanhla Yakho
+                        </p>
+                        <p class="text-[11px] text-stone-300 mt-2 leading-relaxed">
+                            The full authentic pouch triumvirate: <strong>Isigidimi Cleansing</strong>, <strong>Xosha Isilwane Protection</strong>, and <strong>Vula Mnyango Attraction</strong>. The exact breakthrough set that secured permanent contracts after years of waiting.
+                        </p>
+                        <div class="mt-3 space-y-1 text-[11px] text-stone-400 border-t border-stone-800 pt-2.5">
+                            <div class="flex items-center gap-2">
+                                <span class="text-emerald-400">✔</span>
+                                <span>Isigidimi: Washes away lingering bad aura & workplace envy</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-emerald-400">✔</span>
+                                <span>2. Xosha Isilwane: Banishes nocturnal disturbances & blocks</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-emerald-400">✔</span>
+                                <span>3. Vula Mnyango: Softens management & draws interview favor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openOrderModal('Combo Yomsebenzi (Job & Opportunity Combo - 3-Pouch Set)', 'R550')" 
+                            class="mt-5 w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-3 rounded-xl text-xs uppercase tracking-wider transition shadow-md">
+                        Order Combo Yomsebenzi (R550)
+                    </button>
+                </div>
+
+                <!-- CARD 2: The Full Spiritual Range Lineup (Studio Presentation) -->
+                <div class="product-card-hover glass-panel rounded-3xl p-6 border border-gold-500/40 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="showcase-frame mb-4 min-h-[300px] sm:min-h-[340px] border border-stone-800">
+                            <img src="Gemini_Generated_Image_jla27ojla27ojla2.jfif" 
+                                  alt="Spiritual Range Quartet - 4 White Bottles on Marble" 
+                                  class="showcase-img"
+                                 onerror="this.onerror=null; this.src='Gemini_Generated_Image_bncqm0bncqm0bncq.webp';">
+                            <span class="absolute bottom-3 right-3 bg-gold-950/90 text-gold-400 text-[10px] font-bold uppercase px-2 py-0.5 rounded border border-gold-500/30">
+                                4-Bottle Complete Range
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-bold font-cinzel text-white">Full Spiritual Quartet</h3>
+                            <span class="text-lg font-bold text-gold-400 font-sans">R1,100</span>
+                        </div>
+                        <p class="text-[11px] text-stone-400 mt-2 leading-relaxed">
+                            The complete spiritual defense and prosperity pack: Vula Kuvaliwe, Vula Mnyango, Somlambo Tonic, and Xosha Isilwane. Complete household restoration.
+                        </p>
+                    </div>
+                    <button onclick="openOrderModal('Full Spiritual Quartet (4-Piece Set)', 'R1,100')" 
+                            class="mt-5 w-full bg-stone-800 hover:bg-gold-500 hover:text-stone-950 text-white font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition border border-stone-700">
+                        Order 4-Piece Quartet (R1,100)
+                    </button>
+                </div>
+
+                <!-- CARD 3: Isibambelelo Sithando Natural Salt (Zumavuma) -->
+                <div class="product-card-hover glass-panel rounded-3xl p-6 border border-pink-500/40 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="showcase-frame mb-4 min-h-[300px] sm:min-h-[340px] border border-stone-800">
+                            <img src="672680456_26536902986000678_7282904157430063550_n.webp" 
+                                  alt="Zumavuma Zonke Isibambelelo Sithando Natural Green Salt" 
+                                  class="showcase-img"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x300/1C0B1B/F472B6?text=Isibambelelo+Salt';">
+                            <span class="absolute bottom-3 right-3 bg-pink-950/90 text-pink-300 text-[10px] font-bold uppercase px-2 py-0.5 rounded border border-pink-500/30">
+                                Couple Locking Salt
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-bold font-cinzel text-white">Isibambelelo Sithando Salt</h3>
+                            <span class="text-lg font-bold text-gold-400 font-sans">R390</span>
+                        </div>
+                        <p class="text-[11px] text-stone-400 mt-2 leading-relaxed">
+                            Authentic green herbal salt (<em>Zumavuma Zonke</em>). Consecrated to keep your spouse attentive, faithful, and emotionally devoted, dissolving marital arguments.
+                        </p>
+                    </div>
+                    <button onclick="openOrderModal('Isibambelelo Sithando Natural Salt (Zumavuma)', 'R390')" 
+                            class="mt-5 w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-500 text-white font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition shadow-md">
+                        Order Isibambelelo Salt (R390)
+                    </button>
+                </div>
+
+                <!-- CARD 4: Mavuma Zonke & Mavula Kuvaliwe Lotions -->
+                <div class="product-card-hover glass-panel rounded-3xl p-6 border border-stone-800 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="showcase-frame mb-4 min-h-[300px] sm:min-h-[340px] border border-stone-800">
+                            <img src="670890522_26537958439228466_8970932355440927488_n.webp" 
+                                  alt="Mavula Kuvaliwe Lotion & Mavuma Zonke Jars" 
+                                  class="showcase-img"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x300/0A1B16/34D399?text=Mavula+Lotion';">
+                            <span class="absolute bottom-3 right-3 bg-emerald-950/90 text-emerald-300 text-[10px] font-bold uppercase px-2 py-0.5 rounded border border-emerald-500/30">
+                                Aura Body Care
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-bold font-cinzel text-white">Mavula Kuvaliwe Lotion</h3>
+                            <span class="text-lg font-bold text-gold-400 font-sans">R250</span>
+                        </div>
+                        <p class="text-[11px] text-stone-400 mt-2 leading-relaxed">
+                            Authentic body lotion for work favor (<em>yomsebenzi</em>) and attraction (<em>yothando</em>). Applied after bathing to protect against jealousy and attract opportunities.
+                        </p>
+                    </div>
+                    <button onclick="openOrderModal('Mavula Kuvaliwe Body Lotion', 'R250')" 
+                            class="mt-5 w-full bg-stone-800 hover:bg-stone-700 text-white font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition border border-stone-700">
+                        Order Mavula Lotion (R250)
+                    </button>
+                </div>
+
+                <!-- CARD 5: VUSA INDUKU: THE MEN'S SEXUAL WELLNESS MASTER -->
+                <div class="product-card-hover glass-panel rounded-3xl p-6 border border-gold-500/40 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="showcase-frame mb-4 min-h-[300px] sm:min-h-[340px] border border-gold-500/30 relative">
+                            <img src="Gemini_Generated_Image_8my8zx8my8zx8my8.webp" 
+                                  alt="Vusa Induku: The Men's Sexual Wellness Master Bottle" 
+                                  class="showcase-img"
+                                 onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-20 h-20 rounded-full bg-gold-500/20 border border-gold-400 flex items-center justify-center text-3xl mb-2\'>⚡</div><span class=\'text-xs font-bold text-white uppercase tracking-wider\'>Vusa Induku</span><span class=\'text-[10px] text-gold-400\'>Firmness • Endurance • Kidney Tone</span>';">
+                            <span class="absolute top-3 left-3 bg-gold-950/90 text-gold-400 text-[10px] font-bold uppercase px-2 py-0.5 rounded border border-gold-500/30">
+                                Men's Sexual Wellness Master
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-bold font-cinzel text-white">Vusa Induku Master Blend</h3>
+                            <span class="text-lg font-bold text-gold-400 font-sans">R350</span>
+                        </div>
+                        <p class="text-[11px] text-stone-400 mt-2 leading-relaxed">
+                            Flagship male pelvic vitality brew. Awakens blood micro-circulation, eliminates bedroom exhaustion, and restores firm morning endurance naturally.
+                        </p>
+                    </div>
+                    <button onclick="openOrderModal('Vusa Induku: The Men\'s Sexual Wellness Master', 'R350')" 
+                            class="mt-5 w-full bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 text-stone-950 font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition shadow-md">
+                        Order Vusa Induku Blend (R350)
+                    </button>
+                </div>
+
+                <!-- CARD 6: The Full Traditional Pharmacy Shelf -->
+                <div class="product-card-hover glass-panel rounded-3xl p-6 border border-stone-800 flex flex-col justify-between group shadow-xl">
+                    <div>
+                        <div class="showcase-frame mb-4 min-h-[300px] sm:min-h-[340px] border border-stone-800">
+                            <img src="670961907_26538279289196381_1467757602339703113_n.webp" 
+                                  alt="Traditional Herbal Apothecary Dispensary Shelves" 
+                                  class="showcase-img"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x300/151311/D4AF37?text=Apothecary+Shelf';">
+                            <span class="absolute bottom-3 right-3 bg-stone-950/90 text-stone-300 text-[10px] font-bold uppercase px-2 py-0.5 rounded border border-stone-700">
+                                Consultation
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-bold font-cinzel text-white">Custom Traditional Blend</h3>
+                            <span class="text-lg font-bold text-emerald-400 font-sans">Direct</span>
+                        </div>
+                        <p class="text-[11px] text-stone-400 mt-2 leading-relaxed">
+                            Have a personal concern not listed above? Connect directly with Ndlovukazi Maka Mimi for a personalized herbal compound prepared specifically for your situation.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/27769804819?text=Sawubona%20MakaMimi,%20ngifisa%20ukubonisana%20nawe%20ngesimo%20sami."
+                        target="_blank"
+                        class="mt-5 block text-center w-full bg-stone-800 hover:bg-stone-700 text-white font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition border border-stone-700">
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CONFIDENTIAL SELF-ASSESSMENT -->
+    <section id="consultation" class="py-16 bg-stone-900/20 border-t border-stone-800/80 scroll-mt-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Confidential Self-Assessment</span>
+                <h2 class="text-3xl font-cinzel font-black text-white mt-1">Which Maka Mimi Remedy Do You Need?</h2>
+                <p class="text-stone-400 text-sm mt-2">Select your primary concern to receive a practitioner-matched recommendation.</p>
+            </div>
+
+            <div class="glass-panel p-6 sm:p-9 rounded-3xl border border-stone-800 shadow-2xl">
+                <div id="quizStep1" class="space-y-6">
+                    <div class="flex items-center justify-between text-xs text-stone-400 mb-2">
+                        <span>Step 1 of 2</span>
+                        <span class="text-gold-400 font-semibold">Primary Goal</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white">What is your main focus today?</h3>
+
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <button onclick="selectQuizCategory('women', this)" class="quiz-option text-left p-4 rounded-2xl border border-stone-800 bg-stone-900 hover:border-purple-500 transition group">
+                            <span class="block text-sm font-bold text-white group-hover:text-purple-400 mb-1">Womb & Intimacy</span>
+                            <span class="text-[11px] text-stone-400">Discharge, painful periods, fibroids, low intimacy drive.</span>
+                        </button>
+                        <button onclick="selectQuizCategory('male', this)" class="quiz-option text-left p-4 rounded-2xl border border-stone-800 bg-stone-900 hover:border-gold-500 transition group">
+                            <span class="block text-sm font-bold text-white group-hover:text-gold-400 mb-1">Male Stamina</span>
+                            <span class="text-[11px] text-stone-400">Firmness, stamina loss, pelvic blood flow, endurance.</span>
+                        </button>
+                        <button onclick="selectQuizCategory('job', this)" class="quiz-option text-left p-4 rounded-2xl border border-stone-800 bg-stone-900 hover:border-emerald-500 transition group">
+                            <span class="block text-sm font-bold text-white group-hover:text-emerald-400 mb-1">Work & Promotion</span>
+                            <span class="text-[11px] text-stone-400">Securing permanent job, passing interviews, favor.</span>
+                        </button>
+                        <button onclick="selectQuizCategory('lock', this)" class="quiz-option text-left p-4 rounded-2xl border border-stone-800 bg-stone-900 hover:border-pink-500 transition group">
+                            <span class="block text-sm font-bold text-white group-hover:text-pink-400 mb-1">Love & Binding</span>
+                            <span class="text-[11px] text-stone-400">Stopping infidelity, softening stubborn partner, fidelity salt.</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div id="quizStep2" class="space-y-6 hidden mt-6 pt-6 border-t border-stone-800">
+                    <div class="flex items-center justify-between text-xs text-stone-400 mb-2">
+                        <span>Step 2 of 2</span>
+                        <span class="text-gold-400 font-semibold">Duration</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white">How long have you been dealing with this?</h3>
+
+                    <div class="grid sm:grid-cols-3 gap-4">
+                        <button onclick="completeQuiz('recent')" class="text-left p-4 rounded-2xl border border-stone-800 bg-stone-900 hover:border-gold-500 transition">
+                            <span class="block text-sm font-bold text-white mb-1">Recent (Under 3 Months)</span>
+                            <span class="text-[11px] text-stone-400">Recent setback or stress-related struggle.</span>
+                        </button>
+                        <button onclick="completeQuiz('moderate')" class="text-left p-4 rounded-2xl border border-stone-800 bg-stone-900 hover:border-gold-500 transition">
+                            <span class="block text-sm font-bold text-white mb-1">3 - 12 Months</span>
+                            <span class="text-[11px] text-stone-400">Affecting confidence, peace, and progress.</span>
+                        </button>
+                        <button onclick="completeQuiz('chronic')" class="text-left p-4 rounded-2xl border border-stone-800 bg-stone-900 hover:border-gold-500 transition">
+                            <span class="block text-sm font-bold text-white mb-1">Over 1 Year (Chronic)</span>
+                            <span class="text-[11px] text-stone-400">Needs full ancestral unblocking and complete treatment.</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result Display Area -->
+                <div id="quizResult" class="hidden mt-6 pt-6 border-t border-stone-800">
+                    <div class="bg-stone-900/90 border border-gold-500/50 p-6 rounded-2xl">
+                        <div class="flex items-center gap-2 text-xs font-bold text-gold-400 uppercase tracking-wider mb-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            Maka Mimi's Prescribed Formulation
+                        </div>
+                        <h4 id="resultTitle" class="text-2xl font-cinzel font-bold text-white mb-2">Isibusiso Sabafazi (1L)</h4>
+                        <p id="resultDescription" class="text-stone-300 text-xs sm:text-sm mb-6 leading-relaxed">
+                            Formulated to rapidly restore feminine health, balance hormones, and eradicate discomfort.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <button id="resultActionBtn" class="bg-gradient-to-r from-gold-500 to-amber-600 text-stone-950 font-bold px-6 py-3 rounded-xl text-xs uppercase tracking-wider shadow-lg">
+                                Order This Mixture
+                            </button>
+                            <button onclick="resetQuiz()" class="text-stone-400 hover:text-white px-4 py-3 text-xs uppercase tracking-wider">
+                                Start Over
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discreet Logistics Guarantee Footer -->
+    <footer class="bg-stone-950 text-stone-500 text-xs py-14 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
+
+            <div class="space-y-3">
+                <div class="text-lg font-cinzel font-black text-white tracking-wider flex items-center gap-2">
+                    <span>MAKAMIMI</span>
+                    <span class="text-[9px] text-gold-400 border border-gold-500/30 px-1.5 py-0.5 rounded">Imbiza Yemvelo</span>
+                </div>
+                <p class="text-stone-400 leading-relaxed text-xs">
+                    Ndlovukazi Nkosazan' Emhlophe. Pure indigenous South African herbal medicine crafted to uplift families and restore harmony.
+                </p>
+                <div class="text-gold-400 text-xs font-semibold">
+                    TikTok: <a href="https://www.tiktok.com/@makamimi72" target="_blank" class="hover:underline">@makamimi72</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-stone-300 font-bold uppercase tracking-wider mb-2">Discreet Packaging Guarantee</h4>
+                <p class="leading-relaxed text-stone-400 text-xs">
+                    Every order is sealed in an unmarked, confidential brown box or courier flyer. Zero embarrassing logos or labels. Completely private delivery to your door or nearest PEP store.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-stone-300 font-bold uppercase tracking-wider mb-2">Nationwide Couriers</h4>
+                <p class="leading-relaxed text-stone-400 text-xs">
+                    Dispatched daily via PEP PAXI, The Courier Guy, and PostNet across all 9 provinces. Direct tracking pin forwarded to your WhatsApp upon dispatch.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-stone-300 font-bold uppercase tracking-wider mb-2">Direct WhatsApp</h4>
+                <p class="leading-relaxed text-stone-400 text-xs mb-1">
+                    Connect directly with Maka Mimi:
+                </p>
+                <a href="https://wa.me/27769804819" class="text-gold-400 font-bold text-sm hover:underline block">
+                    +27 76 980 4819
+                </a>
+                <span class="text-[10px] text-stone-500 block mt-1">Active 08:00 – 18:00 SAST Daily</span>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-stone-900 text-center text-stone-500 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px]">
+            <p>© <span id="currentYear"></span> MakaMimi Imbiza Yemvelo. All Rights Reserved.</p>
+            <p>100% Imvelo Yemvelo • Traditional African Formulation</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING ISIZULU VOICE ADVISOR POPUP WITH DIRECT ATTACHED AUDIO -->
+    <div id="sideAdvisorPopup" class="fixed bottom-6 right-6 z-50 max-w-sm w-full transition-all duration-300 transform scale-100 hidden">
+        <div class="bg-stone-950/95 border-2 border-emerald-500/80 rounded-3xl p-5 shadow-2xl backdrop-blur-md relative overflow-hidden">
+            <!-- Close Button (Dismisses cleanly so all cards are unobstructed) -->
+            <button type="button" 
+                    id="closeAdvisorBtn" 
+                    onclick="dismissAdvisorPopup(event)" 
+                    class="absolute top-3 right-3 text-stone-400 hover:text-white bg-stone-900/80 hover:bg-stone-800 p-2 rounded-full transition text-sm leading-none z-20 cursor-pointer">
+                ✕
+            </button>
+
+            <div class="flex items-center gap-3 mb-3">
+                <div class="relative w-12 h-12 rounded-full overflow-hidden border border-gold-500 shrink-0">
+                    <img src="829301442_28797453903278897_6480968709035888153_n (1).webp" 
+                         alt="Ndlovukazi Maka Mimi" 
+                         class="w-full h-full object-cover"
+                         onerror="this.onerror=null; this.src='829301442_28797453903278897_6480968709035888153_n.webp';">
+                </div>
+                <div>
+                    <span class="text-[10px] text-emerald-400 uppercase tracking-wider font-bold block">Izwi LikaMaka Mimi</span>
+                    <h4 class="text-sm font-cinzel font-bold text-white">Musa Ukuhlupheka Uthule</h4>
+                </div>
+            </div>
+
+            <p class="text-xs text-stone-300 leading-relaxed italic bg-black/40 p-3 rounded-xl border border-stone-800/80 mb-3">
+                "Sawubona mntanami. Musa ukuhlupheka uthule emhlabeni. NginguMaka Mimi, Ndlovukazi Nkosazan' Emhlophe. Sikhona lapha ukukusiza ngemithi yemvelo yomdabu..."
+            </p>
+
+            <!-- Native Audio Player Controls and Audio Attachment Input -->
+            <div class="space-y-2 pt-1 border-t border-stone-800/80">
+                <div class="flex items-center justify-between gap-2">
+                    <button type="button" 
+                            id="advisorPlayBtn"
+                            onclick="toggleAudioGuide(event)" 
+                            class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 text-white font-bold px-4 py-2 rounded-xl text-xs uppercase tracking-wider flex items-center gap-2 transition shadow-md">
+                        <span id="advisorPlayIcon">▶</span>
+                        <span id="advisorBtnText">Lalela Izwi</span>
+                    </button>
+
+                    <!-- Voice visualizer waves -->
+                    <div id="popupWaveVisualizer" class="flex items-center gap-1 h-6 opacity-30 transition-opacity">
+                        <span class="w-1 bg-emerald-400 rounded-full animate-wave-1"></span>
+                        <span class="w-1 bg-emerald-300 rounded-full animate-wave-2"></span>
+                        <span class="w-1 bg-gold-400 rounded-full animate-wave-3"></span>
+                        <span class="w-1 bg-emerald-300 rounded-full animate-wave-4"></span>
+                        <span class="w-1 bg-emerald-400 rounded-full animate-wave-5"></span>
+                    </div>
+                </div>
+
+                <!-- Custom Audio File Switcher / Attachment Dropdown -->
+                <div class="flex items-center justify-between text-[10px] text-stone-400 pt-1">
+                    <label class="cursor-pointer hover:text-gold-400 underline flex items-center gap-1">
+                        <span>📁 Select Custom Recording File</span>
+                        <input type="file" id="localAudioFileInput" accept="audio/*,video/mp4" class="hidden" onchange="handleUserAudioUpload(event)">
+                    </label>
+                    <span id="audioTrackLabel" class="text-emerald-400 font-mono">Thando makamimi.wav</span>
+                </div>
+
+                <!-- Diagnostic Notification -->
+                <div id="audioStatusNotice" class="text-[10px] text-emerald-400 font-mono hidden pt-0.5"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reopen Advisor Floating Button (Visible when popup is dismissed) -->
+    <div id="reopenAdvisorBtn" class="fixed bottom-6 right-6 z-40 hidden">
+        <button type="button" 
+                onclick="openAdvisorPopup()" 
+                class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-3 rounded-full shadow-2xl flex items-center gap-2 text-xs uppercase tracking-wider border border-emerald-400/50 transition transform hover:scale-105">
+            <span>📢</span>
+            <span>Izwi LikaMaka</span>
+        </button>
+    </div>
+
+    <!-- Hidden Native Audio Node with Multiple Resource Candidates Including Your Exact File -->
+    <audio id="makaMimiAudioNode" preload="auto">
+        <source src="Thando makamimi.wav" type="audio/wav">
+        <source src="Thando%20makamimi.wav" type="audio/wav">
+        <source src="zulu_guidance.mp3" type="audio/mpeg">
+        <source src="zulu_guidance.wav" type="audio/wav">
+        <source src="zulu_guidance.m4a" type="audio/mp4">
+    </audio>
+
+    <!-- Order Modal for Instant WhatsApp Checkout -->
+    <div id="orderModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-stone-950 border border-gold-500/50 rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl relative">
+            <button onclick="closeOrderModal()" class="absolute top-5 right-5 text-stone-400 hover:text-white text-xl p-1">
+                ✕
+            </button>
+
+            <div class="mb-5">
+                <span class="text-xs uppercase font-bold tracking-widest text-gold-400">Direct WhatsApp Order</span>
+                <h3 class="text-xl sm:text-2xl font-cinzel font-bold text-white mt-1" id="modalProductTitle">Combo Yomsebenzi</h3>
+                <div class="text-lg font-bold text-gold-400 mt-0.5" id="modalProductPrice">R550</div>
+            </div>
+
+            <form id="orderForm" onsubmit="submitWhatsAppOrder(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Your Name / Nickname</label>
+                    <input type="text" id="custName" required placeholder="e.g. Sisi Nqo or Sipho" 
+                           class="w-full bg-stone-900 border border-stone-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Preferred Courier Option</label>
+                    <select id="custDelivery" class="w-full bg-stone-900 border border-stone-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500">
+                        <option value="PEP PAXI (Store-to-Store)">PEP PAXI Store Collection</option>
+                        <option value="The Courier Guy (Doorstep Delivery)">The Courier Guy (Doorstep to Home/Office)</option>
+                        <option value="PostNet Branch Pickup">PostNet Branch Pickup</option>
+                        <option value="Discuss on WhatsApp">Discuss Courier on WhatsApp</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Town / City / Nearest PEP</label>
+                    <input type="text" id="custLocation" required placeholder="e.g. Soweto, Durban, Polokwane, Pretoria" 
+                           class="w-full bg-stone-900 border border-stone-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Confidential Note / Query</label>
+                    <textarea id="custNotes" rows="2" placeholder="e.g. Questions on usage, discrete notes..." 
+                              class="w-full bg-stone-900 border border-stone-800 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:border-gold-500"></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" 
+                            class="w-full bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 text-stone-950 font-bold py-3.5 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-transform active:scale-95">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+                        </svg>
+                        <span>Send Order Directly to Maka Mimi</span>
+                    </button>
+                    <p class="text-[10px] text-center text-stone-500 mt-2">
+                        Pre-populates an encrypted WhatsApp message to +27 76 980 4819.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yr = document.getElementById('currentYear');
+            if (yr) yr.textContent = new Date().getFullYear();
+
+            const audioNode = document.getElementById('makaMimiAudioNode');
+            if (audioNode) {
+                audioNode.load();
+            }
+
+            setTimeout(() => {
+                const popup = document.getElementById('sideAdvisorPopup');
+                if (popup && popup.classList.contains('hidden')) {
+                    popup.classList.remove('hidden');
+                }
+                startInstantAutoplay();
+            }, 500);
+
+            initAudioListeners();
+        });
+
+        let currentOrder = {
+            name: "Combo Yomsebenzi",
+            price: "R550"
+        };
+        let quizCategory = null;
+        let isAudioPlaying = false;
+        let customAudioBlobUrl = null;
+        let autoplayUnlocked = false;
+        let isWebSpeechFallback = false;
+
+        const ZULU_FULL_SCRIPT = "Sawubona mntanami. Musa ukuhlupheka uthule emhlabeni. NginguMaka Mimi, Ndlovukazi Nkosazan' Emhlophe. Sikhona lapha ukukusiza ngemithi yemvelo yomdabu, engenazo izibulali-magciwane noma amakhemikhali anobuthi. Kowesifazane ohlushwa isisu, ukungena esikhathini ngobuhlungu, i-discharge nephunga elingapheli, noma imizwa yobudlelwane esepholile—thatha Isibusiso Sabafazi. Isisu sakho sizohlanzeka, kukhanye, uvuthe ubumnandi. Kubobaba nabafowethu abakhalela amandla embhedeni, ukukhathala, nenduku engasami ngokuqina—siniphathele i-Vusa Induku. Ibuyisa amandla nokuzethemba emzini wakho. Uma uvalelwe emsebenzini, ufuna i-permanent contract, noma ufisa inhlanhla kumathenda nakuma-interviews—khetha i-Combo Yomsebenzi kanye ne-Vula Mnyango. Uma kukhona izilwane zasebusuku, amaphupho amabi, noma isinyama esikubambile—sinayo i-Xosha Isilwane kanye ne-Vula Kuvaliwe yokugquma, ukugeza, nokuphalaza. Kanti othandweni, uma ufuna ukubopha umuzi wakho, kuphole izimpi, umuntu wakho akuthande akuhloniphe angabheki ngaphandle—sebenzisa usawoti wethu we-Zumavuma Isibambelelo Sithando. Ukuthola usizo kulula kakhulu: khetha umkhiqizo wakho lapha phansi, bese ucindezela inkinobho ye-WhatsApp usithumelele umyalezo ku-076 980 4819. Sikuthumelela ngephakethe elivaliwe, eliyimfihlo engenamagama ngaphandle. Sisebenzisa i-PEP PAXI, The Courier Guy eqonda emnyango wakho, noma i-PostNet kulo lonke elaseNingizimu Afrika. Musa ukulinda kuze konakale. Thumela i-WhatsApp manje, usizeke.";
+
+        function showAudioStatus(msg, isError = false) {
+            const el = document.getElementById('audioStatusNotice');
+            if (el) {
+                el.textContent = msg;
+                el.className = `text-[10px] font-mono pt-0.5 ${isError ? 'text-amber-400' : 'text-emerald-400'}`;
+                el.classList.remove('hidden');
+            }
+        }
+
+        function initAudioListeners() {
+            const audioNode = document.getElementById('makaMimiAudioNode');
+            if (!audioNode) return;
+
+            audioNode.onplay = () => {
+                isWebSpeechFallback = false;
+                updateAudioUIState(true);
+                showAudioStatus("Kuyakhulunywa (Playing Ndlovukazi Voice)...");
+            };
+            audioNode.onpause = () => {
+                if (!isWebSpeechFallback) updateAudioUIState(false);
+            };
+            audioNode.onended = () => {
+                updateAudioUIState(false);
+                showAudioStatus("");
+            };
+            audioNode.onerror = () => {
+                triggerWebSpeechFallback();
+            };
+        }
+
+        async function startInstantAutoplay() {
+            const audioNode = document.getElementById('makaMimiAudioNode');
+            if (!audioNode) return;
+
+            try {
+                const promise = audioNode.play();
+                if (promise !== undefined) {
+                    await promise;
+                    autoplayUnlocked = true;
+                }
+            } catch (err) {
+                showAudioStatus("Cindezela Lalela Izwi ukuvula umsindo...", false);
+                const unlockOnFirstAction = async () => {
+                    if (autoplayUnlocked) return;
+                    try {
+                        if (audioNode.paused && !isAudioPlaying) {
+                            await audioNode.play();
+                            autoplayUnlocked = true;
+                        }
+                    } catch (e) {
+                        triggerWebSpeechFallback();
+                    }
+                    ['pointerdown', 'click', 'touchstart', 'scroll', 'keydown'].forEach(evt => {
+                        window.removeEventListener(evt, unlockOnFirstAction, { capture: true });
+                    });
+                };
+
+                ['pointerdown', 'click', 'touchstart', 'scroll', 'keydown'].forEach(evt => {
+                    window.addEventListener(evt, unlockOnFirstAction, { capture: true, once: true });
+                });
+            }
+        }
+
+        function handleUserAudioUpload(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            if (customAudioBlobUrl) {
+                URL.revokeObjectURL(customAudioBlobUrl);
+            }
+
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+            }
+
+            customAudioBlobUrl = URL.createObjectURL(file);
+            const audioNode = document.getElementById('makaMimiAudioNode');
+            if (audioNode) {
+                audioNode.src = customAudioBlobUrl;
+                audioNode.load();
+                audioNode.play().catch(() => {
+                    showAudioStatus("Cindezela Lalela Izwi ukuvula umsindo", false);
+                });
+            }
+
+            const trackLabel = document.getElementById('audioTrackLabel');
+            if (trackLabel) {                trackLabel.textContent = file.name.substring(0, 20);
+                trackLabel.title = file.name;
+            }
+            showAudioStatus(`Irekhodi lifakiwe: ${file.name}`);
+        }
+
+        async function toggleAudioGuide(e) {
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            const audioNode = document.getElementById('makaMimiAudioNode');
+
+            if (isAudioPlaying) {
+                if (audioNode && !audioNode.paused) {
+                    audioNode.pause();
+                }
+                if ('speechSynthesis' in window) {
+                    window.speechSynthesis.cancel();
+                }
+                updateAudioUIState(false);
+                return;
+            }
+
+            try {
+                showAudioStatus("Kulungiselela umsindo...");
+                const playPromise = audioNode.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(() => {
+                        triggerWebSpeechFallback();
+                    });
+                }
+            } catch (err) {
+                triggerWebSpeechFallback();
+            }
+        }
+
+        function triggerWebSpeechFallback() {
+            if (!('speechSynthesis' in window)) {
+                showAudioStatus("Faka ifayela lomsindo kwifolda yakho", true);
+                return;
+            }
+
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(ZULU_FULL_SCRIPT);
+            utterance.lang = 'zu-ZA';
+            utterance.rate = 0.95;
+            utterance.pitch = 1.0;
+
+            const voices = window.speechSynthesis.getVoices();
+            const zuluVoice = voices.find(v => v.lang.includes('zu') || v.lang.includes('ZA'));
+            if (zuluVoice) utterance.voice = zuluVoice;
+
+            utterance.onstart = () => {
+                isWebSpeechFallback = true;
+                updateAudioUIState(true);
+                showAudioStatus("Kuyakhulunywa (Web Speech Voice)...");
+            };
+
+            utterance.onend = () => {
+                isWebSpeechFallback = false;
+                updateAudioUIState(false);
+                showAudioStatus("");
+            };
+
+            utterance.onerror = () => {
+                isWebSpeechFallback = false;
+                updateAudioUIState(false);
+                showAudioStatus("Faka ifayela lomsindo kwifolda yakho", true);
+            };
+
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function updateAudioUIState(playing) {
+            isAudioPlaying = playing;
+            const advisorBtnText = document.getElementById('advisorBtnText');
+            const advisorIcon = document.getElementById('advisorPlayIcon');
+            const bannerIcon = document.getElementById('bannerPlayIcon');
+            const bannerText = document.getElementById('bannerPlayText');
+            const wave = document.getElementById('popupWaveVisualizer');
+
+            if (playing) {
+                if (advisorBtnText) advisorBtnText.textContent = "Misa (Pause)";
+                if (advisorIcon) advisorIcon.textContent = "⏸";
+                if (bannerIcon) bannerIcon.textContent = "⏸";
+                if (bannerText) bannerText.textContent = "Misa (Pause)";
+                if (wave) {
+                    wave.classList.remove('opacity-30');
+                    wave.classList.add('opacity-100');
+                }
+            } else {
+                if (advisorBtnText) advisorBtnText.textContent = "Lalela Izwi";
+                if (advisorIcon) advisorIcon.textContent = "▶";
+                if (bannerIcon) bannerIcon.textContent = "▶";
+                if (bannerText) bannerText.textContent = "Lalela Izwi";
+                if (wave) {
+                    wave.classList.remove('opacity-100');
+                    wave.classList.add('opacity-30');
+                }
+            }
+        }
+
+        function dismissAdvisorPopup(e) {
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            const audioNode = document.getElementById('makaMimiAudioNode');
+            if (audioNode && !audioNode.paused) {
+                audioNode.pause();
+            }
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+            }
+            updateAudioUIState(false);
+
+            const popup = document.getElementById('sideAdvisorPopup');
+            if (popup) {
+                popup.classList.add('hidden');
+            }
+            const reopenBtn = document.getElementById('reopenAdvisorBtn');
+            if (reopenBtn) {
+                reopenBtn.classList.remove('hidden');
+                reopenBtn.classList.add('flex');
+            }
+        }
+
+        function openAdvisorPopup() {
+            const popup = document.getElementById('sideAdvisorPopup');
+            if (popup) {
+                popup.classList.remove('hidden');
+            }
+            const reopenBtn = document.getElementById('reopenAdvisorBtn');
+            if (reopenBtn) {
+                reopenBtn.classList.remove('flex');
+                reopenBtn.classList.add('hidden');
+            }
+        }
+
+        function openOrderModal(productName, price) {
+            currentOrder.name = productName;
+            currentOrder.price = price;
+
+            const titleEl = document.getElementById('modalProductTitle');
+            const priceEl = document.getElementById('modalProductPrice');
+            if (titleEl) titleEl.textContent = productName;
+            if (priceEl) priceEl.textContent = price;
+
+            const modal = document.getElementById('orderModal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                }, 10);
+            }
+        }
+
+        function closeOrderModal() {
+            const modal = document.getElementById('orderModal');
+            if (modal) {
+                modal.classList.add('opacity-0');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        function submitWhatsAppOrder(e) {
+            e.preventDefault();
+
+            const nameEl = document.getElementById('custName');
+            const deliveryEl = document.getElementById('custDelivery');
+            const locEl = document.getElementById('custLocation');
+            const notesEl = document.getElementById('custNotes');
+
+            const name = nameEl ? nameEl.value.trim() : "";
+            const delivery = deliveryEl ? deliveryEl.value : "";
+            const location = locEl ? locEl.value.trim() : "";
+            const notes = notesEl ? notesEl.value.trim() : "";
+
+            const textMessage = 
+                `*DISCREET ORDER - MAKAMIMI IMBIZA YEMVELO*\n` +
+                `-----------------------------------------\n` +
+                `*Product:* ${currentOrder.name} (${currentOrder.price})\n` +
+                `*Client:* ${name}\n` +
+                `*Preferred Courier:* ${delivery}\n` +
+                `*Destination:* ${location}\n` +
+                (notes ? `*Special Notes:* ${notes}\n` : ``) +
+                `-----------------------------------------\n` +
+                `Sawubona Maka Mimi, please send banking details to confirm dispatch.`;
+
+            const encoded = encodeURIComponent(textMessage);
+            const waUrl = `https://wa.me/27769804819?text=${encoded}`;
+
+            closeOrderModal();
+            window.open(waUrl, '_blank');
+        }
+
+        function selectQuizCategory(category, buttonEl) {
+            quizCategory = category;
+
+            document.querySelectorAll('.quiz-option').forEach(btn => {
+                btn.classList.remove('border-gold-500', 'bg-gold-950/40');
+            });
+            if (buttonEl) {
+                buttonEl.classList.add('border-gold-500', 'bg-gold-950/40');
+            }
+
+            const step2 = document.getElementById('quizStep2');
+            if (step2) {
+                step2.classList.remove('hidden');
+                step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function completeQuiz(duration) {
+            const resultBox = document.getElementById('quizResult');
+            const titleEl = document.getElementById('resultTitle');
+            const descEl = document.getElementById('resultDescription');
+            const actionBtn = document.getElementById('resultActionBtn');
+
+            let recommendation = {
+                title: "Combo Yomsebenzi (Job & Opportunity Pack)",
+                price: "R550",
+                desc: "The proven breakthrough set: Isigidimi, Xosha Isilwane, and Vula Mnyango. Clears blocks and attracts favor."
+            };
+
+            if (quizCategory === 'women') {
+                recommendation = {
+                    title: "Isibusiso Sabafazi (1 Litre Tonic)",
+                    price: "R380",
+                    desc: "Recommended for total feminine cleansing, hormone balancing, discharge relief, and libido restoration (ushisa bheee)."
+                };
+            } else if (quizCategory === 'male') {
+                recommendation = {
+                    title: "Vusa Induku: The Men's Sexual Wellness Master",
+                    price: "R350",
+                    desc: "Specially formulated for male firmness, long-term stamina, pelvic circulation, and restoring marital confidence."
+                };
+            } else if (quizCategory === 'lock') {
+                recommendation = {
+                    title: "Isibambelelo Sithando Natural Salt (Zumavuma)",
+                    price: "R390",
+                    desc: "Authentic herbal green salt to lock affection, stop roving eyes, and preserve harmony in the home."
+                };
+            }
+
+            if (duration === 'chronic') {
+                recommendation = {
+                    title: "The Full Spiritual Quartet",
+                    price: "R1,100",
+                    desc: "Full comprehensive systemic overhaul: Vula Kuvaliwe, Vula Mnyango, Somlambo Tonic, and Xosha Isilwane for complete home shielding."
+                };
+            }
+
+            if (titleEl) titleEl.textContent = recommendation.title;
+            if (descEl) descEl.textContent = recommendation.desc;
+            if (actionBtn) {
+                actionBtn.textContent = `Order ${recommendation.title} (${recommendation.price})`;
+                actionBtn.onclick = function() {
+                    openOrderModal(recommendation.title, recommendation.price);
+                };
+            }
+
+            if (resultBox) {
+                resultBox.classList.remove('hidden');
+                resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function resetQuiz() {
+            quizCategory = null;
+            document.querySelectorAll('.quiz-option').forEach(btn => {
+                btn.classList.remove('border-gold-500', 'bg-gold-950/40');
+            });
+            const s2 = document.getElementById('quizStep2');
+            const qr = document.getElementById('quizResult');
+            if (s2) s2.classList.add('hidden');
+            if (qr) qr.classList.add('hidden');
+        }
+
+        window.onclick = function(event) {
+            const orderModal = document.getElementById('orderModal');
+            if (orderModal && event.target === orderModal) {
+                closeOrderModal();
+            }
+        };
+    </script>
+</body>
+</html>
